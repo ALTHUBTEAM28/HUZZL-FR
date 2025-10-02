@@ -1,0 +1,138 @@
+.page-service{
+    background: linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%),
+ url("/public/Images/bg-service.jpg");
+    background-size: cover;
+    padding: 0;
+    border-radius: 10px;
+    min-height: 140vh;
+    margin-top: -5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.access-3{
+    position: relative;
+    top: 42rem;
+    left: 33rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+.card-3{
+    background-color: #fff;
+    padding: 10px 15px;
+    min-height: 80vh;
+    max-width: 400px;
+    margin: 80px auto;
+        margin-left: 60rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba( 0, 0, 0, 0.5);
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+label{
+   color: #2454f3;
+   margin: 10px 0 2px;
+   font-weight: bold;
+}
+
+input, select, textarea{
+    padding: 7px;
+      border: 1px solid #03398c;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      outline: none;
+      color: #03398c;
+}
+
+textarea{
+    min-height: 70px;
+    resize: vertical;
+}
+
+.pricing-row{
+    display: flex;
+    align-items: center;
+    border:  1px solid  #03398c;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.pricing-row select{
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+.pricing-row input{
+   border: none;
+   padding: 10px;
+   font-size: 14px;
+   margin-bottom: 2px;
+}
+
+.currency{
+    margin-left: 2rem;
+}
+
+button{
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+button:hover{
+    background: #3336db;
+}
+
+@media (max-width:500px){
+.card-3{
+    padding: 7px 10px;
+    max-width: 85%;
+    margin-left:1rem;
+    min-height: 95vh;
+    margin-top: 2rem;
+   }
+
+
+.access-3{
+    position: relative;
+    top: 54rem;
+    left: 2rem;
+    font-size: 1.2rem;
+}
+
+label{
+   margin: 8px 0 4px;
+}
+
+input, select, textarea{
+    padding: 9px;
+      margin-bottom: 13px;
+      background-color: #fff;
+}
+
+.pricing-row{
+    margin-bottom: 9px;
+}
+
+.pricing-row select{
+  padding: 9px;
+}
+
+.pricing-row input{
+   padding: 9px;
+}
+
+
+.currency{
+    margin-left: 5px;
+}
+}
+
