@@ -13,7 +13,7 @@
 
 .access{
     position: relative;
-    top: 42rem;
+    top: 39rem;
     left: 33rem;
     color: #fff;
     line-height: 1.5;
@@ -141,21 +141,23 @@ button{
 }
 
 .privacy p{
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .privacy a{
     text-decoration: none;
     cursor: pointer;
     color: #4d4af3;
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 .sign{
     margin-bottom: -10px;
 }
+
 .privacy a:hover{
     text-decoration: underline;
+    color: #2454f3;
 }
 
 @media (max-width:500px){

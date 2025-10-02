@@ -18,8 +18,7 @@ const CreateAccount = ({ onContinue }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onContinue(formData);
-  
+
     if (!formData.phone || !formData.name || !formData.password) {
       alert("All fields are required.");
     }
@@ -29,7 +28,9 @@ const CreateAccount = ({ onContinue }) => {
   return;
   }
 
-  onContinue(formData);
+  if (onContinue) {
+    onContinue(formData);
+  }
 };
 
   return (
@@ -45,27 +46,21 @@ const CreateAccount = ({ onContinue }) => {
             <ProgressBar step={1} />
 
             {/*form section */}
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        if (e.currentTarget.checkValidity()) {
-          onContinue(formData);
-        }
-       }}
-      >
+      <form onSubmit={handleSubmit}>
+      
         
         {/*phone number*/}
         <label>Phone Number</label>
         <div className="phone-row">
-          <select name="country"
-value={formData.location}
-onChange={handleChange}
-required
->
-  {/* country*/}
-  <option value="NGN">Nigeria</option>
-  <option value="GH">Ghana</option>
-  <option value="KE">Kenya</option>
-</select>
+          <select name="location" 
+        value={formData.location} 
+        onChange={handleChange}
+        required>
+          
+          <option value="Nigeria">Nigeria</option>
+          <option value="Ghana">Ghana</option>
+          <option value="Kenya">Kenya</option>
+        </select>
 
         <input
           type="tel"

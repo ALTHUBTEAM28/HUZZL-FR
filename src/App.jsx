@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CreateAccount from "./Components/CreateAccount";
 import ProfileSetup from "./Components/ProfileSetup";
 import ServiceListing from "./Components/ServiceListing";
+import AboutPage from "./Components/AboutPage";
+import Login from "./Components/Login";
 import SuccessPage from "./Components/SuccessPage";
 import "./App.css";
 
-const App = () => {
+const SignupFlow = () => {
   const [step, setStep] = useState(1);
   const [userData, setUserData] = useState({});
 
@@ -23,16 +26,26 @@ const App = () => {
 
 
   return (
-
-    <div className="app-container">
+    <>
       {step === 1 && <CreateAccount onContinue={handleContinue} />}
       {step === 2 && <ProfileSetup onContinue={handleContinue} />}
       {step === 3 && <ServiceListing onSubmit={handleFinish} />}
    {step === 4 && <SuccessPage/>}
-    </div>
-
+    </>
   );
+};
 
+const App = () => {
+  return (
+    <div className="app-container">
+      <Routes>
+        <Route path="/" element={<SignupFlow/>}/>
+        <Route path="/login" element={<Login/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
+                 <Route path="/create-account" element={<CreateAccount/>}/>
+      </Routes>
+</div>
+  );
 };
 
 

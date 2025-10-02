@@ -28,8 +28,8 @@ const Login = () => {
          <img src="/Images/Logo.png" alt="logo"
              className="logo-huzzl" />
         <img src="/Images/worker.png" alt="Worker" className="signin-image" />
-        <a href="/" className="back-link">Back to Website 
-        <span> <img src="/Images/arrow right.svg"/> </span></a>
+        <Link to="/about" className="back-link">Back to Website 
+        <span> <img src="/Images/arrow right.svg"/> </span></Link>
       </div>
 
 
@@ -76,7 +76,7 @@ const Login = () => {
             required
           />
 
-          <button type="submit" className="signin-btn">Log In</button>
+          <button type="submit" className="signin-btn">Continue</button>
         </form>
 
         {/* sign-up link*/}
