@@ -1,12 +1,45 @@
-# React + Vite
+# HUZZL
+## ALTHUB TEAM 28.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+HUZZL is a trusted platform that connects individuals and businesses with qualified professionals across diverse trades — from skilled workers to service providers. The goal is to make hiring simple, fast, and reliable, all in one place.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🔍 **Discover Professionals** – Easily search and connect with verified service providers across multiple industries.  
+- ⚡ **Fast & Reliable Hiring** – Streamlined process to quickly find the right person for the job.  
+- ✅ **Verified & Trusted** – All professionals are vetted to ensure quality and reliability.  
+- 📱 **User-Friendly Experience** – Accessible on both desktop and mobile for convenience.  
+- 🤝 **One-Stop Solution** – All your hiring needs in one platform.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **Frontend:** ReactJS (or your choice of framework)  
+
+- **Deployment:** Vercel  
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ALTHUBTEAM28/HUZZL-FR.git
+
+
+2. Install dependencies:
+
+```npm install
+
+
+Set up environment variables:
+
+Create a .env file in the root directory
+
+Add keys for database, authentication, and API services
+
+Run the development server:
+
+npm run dev
+
