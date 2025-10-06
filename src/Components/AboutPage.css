@@ -1,0 +1,710 @@
+.main-container{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    max-width: 800px;
+    margin-left: 20rem;
+}
+
+.about-section{
+ background: linear-gradient( to right,
+ #ffffff 0%,#ffffff 25%,
+  #092a5f 25%,
+ #092a5f  75%,
+  #ffffff 75%, #ffffff 100%);
+ padding: 10px;
+   height: 70vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 3.5rem;
+}
+
+.nav-links li{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-links li:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.get-started{
+    padding: 5px 15px;
+    background-color: #03398c;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 200;
+    margin-left: -2rem;
+    white-space: nowrap;
+}
+
+.get-started:hover{
+    background-color: #0a54c4;
+}
+
+.about-container{
+  display: grid;
+  grid-template-columns  : 1fr 1fr;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.subtitle{
+    font-size: 1.5rem;
+}
+
+.about-right{
+position: relative;
+top: -28.5rem;
+left: 27rem;
+}
+
+.about-left{
+        margin-left: 1.5rem;
+        font-weight: 500;
+        line-height: 1.5;
+}
+
+.about-img{
+    width: 20vw;
+}
+
+.mission-vision{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 1rem;
+  margin: 2rem auto;
+  margin-top: 3rem;
+}
+
+.mission, .vision{
+    flex: 1;
+    min-width: 280px;
+    padding: 1.5rem;
+}
+
+.mission h3, vision h3{
+    margin-bottom: 0.5rem;
+}
+
+.faq h3{
+    margin-bottom: 1.5rem;
+    text-align: start;
+}
+
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-bottom: 7rem;
+}
+
+.faq-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+      border: 1px solid #000;
+}
+
+.plus{
+    font-size: 1.3rem;
+}
+
+.faq-item:hover{
+    background: #f1f6ff;
+}
+
+.cta{
+    background-color: #092a5f;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.cta h3{
+    font-size: 1.6rem;
+}
+
+.cta-buttons{
+   padding: 1rem 2rem;
+}
+
+.cta-btn{
+    margin-right: 2rem;
+    width: 9rem;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: .8rem;
+    border-radius: 13px;
+}
+
+.cta-btn2{
+    width: 9rem;
+    background-color: #0f3168;
+    color: #fff;
+    cursor: pointer;
+    font-size: .8rem;
+        border-radius: 13px;
+        border: 1px solid #041735;
+}
+
+.subscribe-section{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 8px;
+}
+
+.subscribe-inner{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.subscribe-left h3{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.subscribe-left p{
+    font-size: 14px;
+}
+
+.subscribe-right{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.subscribe-form{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.subscribe-input{
+    width: 12vw;
+    border-radius: 12px;
+}
+
+.subscribe-input::placeholder{
+    color: #666565;
+}
+
+.subscribe-btn{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    width: 7vw;
+    padding: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: -1px;
+}
+
+.privacy-text{
+    text-align: center;
+    margin-left: 27rem;
+    margin-top: -.5rem;
+    font-size: .9rem;
+}
+
+.privacy-text a{
+    color: #000;
+    text-decoration: none;
+}
+
+.privacy-text a:hover{
+    text-decoration: underline;
+    color: #03398c;
+}
+
+hr{
+    height: 1px;
+    background-color: #000;
+    width: 100%;
+}
+
+.footer{
+
+    margin-top: 1rem;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    margin-top: -2rem;
+}
+
+.footer-top h4{
+    margin-bottom: 0.9rem;
+
+}
+
+.sector-5 img{
+    width: 30px;
+}
+
+.footer-bottom{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+@media (max-width:768px){
+    .main-container{
+    max-width: 500px;
+    margin-left: 7rem;
+}
+
+.about-section{
+ padding: 7px;
+   height: 52vh;
+}
+
+.Logo{
+    margin-left: -5rem;
+}
+
+.nav-links{
+    gap: 2.2rem;
+    margin-left: 1rem;
+}
+
+.get-started{
+    padding: 5px 25px;
+    font-size: 12px;
+    margin-left: 1rem;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    margin-top: -1rem;
+}
+
+.about-right{
+position: relative;
+top: -19.8rem;
+left:21rem;
+}
+
+.about-left{
+ margin-left: -2rem;
+   font-weight: 500;
+   line-height: 1.2;
+}
+
+.about-left p{
+    font-size: 15px;
+}
+
+.about-img{
+    width: 28vw;
+}
+
+.mission-vision{
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.mission, .vision{
+    flex: 1;
+    min-width: 240px;
+    padding: 1rem;
+}
+
+.subscribe-inner{
+     gap: 2rem;
+}
+
+.subscribe-left p{
+    font-size: 13px;
+}
+
+.subscribe-right{
+    gap: 10px;
+}
+
+.subscribe-form{
+    gap: 10px;
+}
+
+.subscribe-input{
+    width: 15vw;
+}
+
+.subscribe-btn{
+    font-size: 14px;
+    width: 11vw;
+    padding: 4px;
+}
+
+.privacy-text{
+    text-align: center;
+    margin-left: 16rem;
+    margin-top: -.5rem;
+    font-size: .65rem;
+}
+
+.footer-top{
+    gap: .5rem;
+    padding: 1rem .5rem;
+}
+
+.footer-top h4{
+    margin-bottom: .8rem;
+
+}
+
+.footer-top p{
+    font-size: 15px;
+}
+}
+
+
+@media (max-width:500px){
+     .main-container{
+    max-width: 400px;
+    margin-left: 4rem;
+}
+
+.about-section{
+ padding: 5px;
+   height: 56vh;
+}
+
+.Logo{
+    margin-left: -6rem;
+}
+
+.nav-links{
+    gap: 1rem;
+    margin-left: -1rem;
+}
+
+.get-started{
+    padding: 3px 20px;
+    font-size: 12px;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+
+.subtitle{
+    font-size: 1.1rem;
+}
+
+.about-right{
+position: relative;
+top: -21.7rem;
+left: 15rem;
+}
+
+.about-img{
+    width: 48vw;
+}
+
+.mission-vision{
+  gap: 2rem;
+  padding: 2rem;
+  margin-left: 1rem;
+}
+
+.mission, .vision{
+    min-width: 200px;
+    margin-left: 2rem;
+}
+
+.cta-buttons{
+   padding: 1rem 1rem;
+}
+
+
+.cta h3{
+    font-size: 1.2rem;
+}
+
+.cta p{
+    font-size: 13px;
+    margin-left: -10px;
+}
+
+.subscribe-inner{
+     gap: 1rem;
+}
+
+.stay{
+    margin-left: -1.5rem;
+}
+
+.subscribe-left p{
+    font-size: 13px;
+    margin-left: -1.5rem;
+}
+
+.subscribe-right{
+    gap: 5px;
+}
+
+.subscribe-form{
+    gap: 5px;
+}
+
+.subscribe-input{
+    width: 20vw;
+}
+
+.subscribe-input::placeholder{
+    font-size: 12px;
+}
+
+.subscribe-btn{
+    font-size: 13px;
+    width: 11vw;
+    padding: 5px 45px;
+}
+
+.subscribe-btn span{
+    margin-left: -2rem;
+}
+
+.privacy-text{
+    margin-left: 9.5rem;
+    font-size: .65rem;
+}
+
+.footer-top{
+    gap: .5rem;
+    padding: 1rem .5rem;
+}
+
+.footer-top h4{
+    margin-bottom: .8rem;
+
+}
+
+.footer-top p{
+    font-size: 15px;
+}
+}
+
+
+@media (max-width:400px){
+     .main-container{
+    max-width: 300px;
+    margin-left: 6rem;
+}
+
+.about-section{
+ padding: 5px;
+   height: 75vh;
+   width: 120vw;
+}
+
+.Logo{
+    margin-left: -6rem;
+}
+
+.nav-links{
+    gap: 1.7rem;
+}
+
+.get-started{
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+h1{
+    font-size: 1.9rem;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+}
+
+.about-right{
+position: relative;
+top: -20rem;
+left: 18rem;
+}
+
+.about-left{
+    margin-left: -3rem;
+}
+
+
+.about-left p{
+     font-size: 18px;
+}
+
+.about-img{
+    width: 60vw;
+}
+
+.mission-vision{
+  margin-left: 5rem;
+}
+
+.mission, .vision{
+    min-width: 170px;
+    margin-left: 2rem;
+    font-size: 18px;
+}
+
+
+.faq h3{
+    margin-left: -2rem;
+}
+
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    margin-bottom: 7rem;
+    margin-left: -3rem;
+}
+
+.faq-item{
+    width: 120vw;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+.plus{
+    font-size: 1.5rem;
+}
+
+.cta{
+    padding: 1rem;
+    width: 100vw;
+    margin-left: -2rem;
+}
+
+.cta h3{
+    font-size: 1.2rem;
+}
+
+.cta-buttons{
+    padding: 1rem 1rem;
+    margin-left: -1rem;
+}
+
+.cta-btn{
+    width: 8rem;
+    font-size: .9rem;
+}
+
+.cta-btn2{
+    
+    width: 8rem;
+    font-size: .9rem;
+}
+
+.cta p{
+    font-size: 13px;
+    margin-left: -10px;
+}
+
+.stay{
+    margin-left: -2rem;
+}
+
+.subscribe-form{
+   margin-right: -8rem;
+}
+
+
+.subscribe-left p{
+    font-size: 13px;
+    margin-left: -2rem;
+}
+
+.subscribe-input{
+    width: 30vw;
+}
+
+.privacy-text{
+    margin-left: 7.5rem;
+    font-size: .85rem;
+    margin-right: -9rem;
+}
+
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding: 1rem 1rem;
+    margin-top: -2rem;
+}
+
+.footer-top h4{
+    font-size: 1.2rem;
+
+}
+
+.footer-top p{
+    font-size: 16px;
+}
+
+.footer-logo{
+    margin-left: -2rem;
+    margin-right: 4rem;
+}
+
+hr{
+    width: 130vw;
+    margin-left: -4rem;
+}
+
+.sector-2{
+    margin-right: -2rem;
+}
+
+.sector-4{
+    margin-right: -4rem;
+}
+
+.sector-5{
+    margin-left: 4rem;
+     white-space: nowrap;
+}
+
+.footer-copy{
+    margin-left: 5rem;
+    margin-right: -9rem;
+    font-size: 16px;
+}
+}

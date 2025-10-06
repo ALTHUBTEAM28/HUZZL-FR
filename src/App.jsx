@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+<<<<<<< HEAD
 
 // Landing Page Components
 import Navbar from "./Components/NavBar";
@@ -17,6 +18,14 @@ import ProfileSetup from "./components/ProfileSetup";
 import ServiceListing from "./components/ServiceListing";
 import SuccessPage from "./components/SuccessPage";
 
+=======
+import CreateAccount from "./Components/CreateAccount";
+import ProfileSetup from "./Components/ProfileSetup";
+import ServiceListing from "./Components/ServiceListing";
+import AboutPage from "./Components/AboutPage";
+import Login from "./Components/Login";
+import SuccessPage from "./Components/SuccessPage";
+>>>>>>> bce808dee029d0bd3607e8a6f86afc56f1bacb58
 import "./App.css";
 
 const SignupFlow = () => {
@@ -35,6 +44,7 @@ const SignupFlow = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className="app-container">
       {step === 1 && <CreateAccount onContinue={handleContinue} />}
       {step === 2 && <ProfileSetup onContinue={handleContinue} />}
@@ -42,6 +52,28 @@ const SignupFlow = () => {
       {step === 4 && <SuccessPage />}
     </div>
   );
+=======
+    <>
+      {step === 1 && <CreateAccount onContinue={handleContinue} />}
+      {step === 2 && <ProfileSetup onContinue={handleContinue} />}
+      {step === 3 && <ServiceListing onSubmit={handleFinish} />}
+   {step === 4 && <SuccessPage/>}
+    </>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="app-container">
+      <Routes>
+        <Route path="/" element={<SignupFlow/>}/>
+        <Route path="/login" element={<Login/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
+                 <Route path="/create-account" element={<CreateAccount/>}/>
+      </Routes>
+</div>
+  );
+>>>>>>> bce808dee029d0bd3607e8a6f86afc56f1bacb58
 };
 
 function App() {
