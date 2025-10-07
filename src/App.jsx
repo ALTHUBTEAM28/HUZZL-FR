@@ -1,28 +1,23 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-
 // Landing Page Components
 import Navbar from "./Components/NavBar";
-import Hero from "./components/Hero";
-import WhyChoose from "./components/WhyChoose";
-import HowItWorks from "./components/HowItWorks";
-import Categories from "./components/Categories";
-import Features from "./components/Features";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import Hero from "./Components/Hero";
+import WhyChoose from "./Components/WhyChoose";
+import HowItWorks from "./Components/HowItWorks";
+import Categories from "./Components/Categories";
+import Features from "./Components/Features";
+import CTA from "./Components/CTA";
+import Footer from "./Components/Footer";
 
 // Signup Flow Components
-import CreateAccount from "./components/CreateAccount";
-import ProfileSetup from "./components/ProfileSetup";
-import ServiceListing from "./components/ServiceListing";
-import SuccessPage from "./components/SuccessPage";
 import CreateAccount from "./Components/CreateAccount";
 import ProfileSetup from "./Components/ProfileSetup";
+import SuccessPage from "./Components/SuccessPage";
 import ServiceListing from "./Components/ServiceListing";
 import AboutPage from "./Components/AboutPage";
 import Login from "./Components/Login";
-import SuccessPage from "./Components/SuccessPage";
+
 import "./App.css";
 
 const SignupFlow = () => {
@@ -47,26 +42,6 @@ const SignupFlow = () => {
       {step === 3 && <ServiceListing onSubmit={handleFinish} />}
       {step === 4 && <SuccessPage />}
     </div>
-  );
-    <>
-      {step === 1 && <CreateAccount onContinue={handleContinue} />}
-      {step === 2 && <ProfileSetup onContinue={handleContinue} />}
-      {step === 3 && <ServiceListing onSubmit={handleFinish} />}
-   {step === 4 && <SuccessPage/>}
-    </>
-  );
-};
-
-const App = () => {
-  return (
-    <div className="app-container">
-      <Routes>
-        <Route path="/" element={<SignupFlow/>}/>
-        <Route path="/login" element={<Login/>}/>
-          <Route path="/about" element={<AboutPage/>}/>
-                 <Route path="/create-account" element={<CreateAccount/>}/>
-      </Routes>
-</div>
   );
 };
 
@@ -93,6 +68,9 @@ function App() {
 
         {/* Signup Flow */}
         <Route path="/signup" element={<SignupFlow />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
     </Router>
   );
