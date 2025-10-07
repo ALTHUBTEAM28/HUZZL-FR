@@ -15,21 +15,6 @@ const CreateAccount = ({ onContinue }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onContinue(formData);
-
-    if (!formData.phone || !formData.name || !formData.password) {
-      alert("All fields are required.");
-    }
-
-    if (formData.password.length < 12 || formData.password.length > 20) {
-      alert("Password must be between 12-20 characters.");
-      return;
-    }
-
-    onContinue(formData);
-  };
 
   return (
     <div className="page-create">
