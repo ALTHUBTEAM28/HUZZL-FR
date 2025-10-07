@@ -1,4 +1,4 @@
-<<<<<<< HEAD:src/Pages/Login.jsx
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
@@ -89,7 +89,7 @@ const Login = () => {
   );
 };
 
-=======
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
@@ -180,5 +180,4 @@ const Login = () => {
   );
 };
 
->>>>>>> bce808dee029d0bd3607e8a6f86afc56f1bacb58:src/Components/Login.jsx
 export default Login;

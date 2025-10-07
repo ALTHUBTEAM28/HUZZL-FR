@@ -1,4 +1,4 @@
-<<<<<<< HEAD:src/Pages/CreateAccount.css
+
 .page-create{
     background:linear-gradient(to bottom, 
     rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%),
@@ -264,7 +264,7 @@ button{
     font-size: 11px;
 }
 }
-=======
+
 .page-create{
     background:linear-gradient(to bottom, 
     rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%),
@@ -532,4 +532,3 @@ button{
     font-size: 11px;
 }
 }
->>>>>>> bce808dee029d0bd3607e8a6f86afc56f1bacb58:src/Components/CreateAccount.css

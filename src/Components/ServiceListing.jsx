@@ -65,8 +65,8 @@ const ServiceListing = ({ onSubmit }) => {
           <option value="Event Decorator">Carpenter</option>
            <option value="Hair Stylist">Hair Stylist</option>
             <option value="Painter">Painter</option>
-             <option value="Solar Panel Installe">Solar Panel Installer</option>
-            <option value="Driver/Chauffert">Driver/Chauffer</option>
+             <option value="Solar Panel Installer">Solar Panel Installer</option>
+            <option value="Driver/Chauffer">Driver/Chauffer</option>
              <option value="Baby Sitter">Baby Sitter</option>
               <option value="Personal Fitness Coach">Personal Fitness Coach</option>
                <option value="Spa Therapist">Spa Therapist</option>
