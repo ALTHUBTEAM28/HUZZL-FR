@@ -15,7 +15,6 @@ const CreateAccount = ({ onContinue }) => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -32,7 +31,6 @@ const CreateAccount = ({ onContinue }) => {
     onContinue(formData);
   }
 };
-
   return (
 <div className="page-create">
   <h2 className="access">Get access to over 100M+ <br/> clients who needs your services</h2>
