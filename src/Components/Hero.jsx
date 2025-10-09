@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-text">
         <h1>
-          Work Smart, <span>Live Easy</span>
+          Work Smart, <br/><span>Live Easy</span>
         </h1>
         <p>
           Find trusted handymen, cleaners, and more with ease. Simplify your

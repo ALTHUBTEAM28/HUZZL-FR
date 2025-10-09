@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 // Landing Page Components
 import Navbar from "./Components/NavBar";
 import Hero from "./Components/Hero";
@@ -13,8 +14,8 @@ import Footer from "./Components/Footer";
 // Signup Flow Components
 import CreateAccount from "./Components/CreateAccount";
 import ProfileSetup from "./Components/ProfileSetup";
-import SuccessPage from "./Components/SuccessPage";
 import ServiceListing from "./Components/ServiceListing";
+import SuccessPage from "./Components/SuccessPage";
 import AboutPage from "./Components/AboutPage";
 import Login from "./Components/Login";
 
@@ -47,7 +48,7 @@ const SignupFlow = () => {
 
 function App() {
   return (
-    <Router>
+    
       <Routes>
         {/* Landing Page */}
         <Route
@@ -67,12 +68,13 @@ function App() {
         />
 
         {/* Signup Flow */}
+         <Route path="/" element={<landingPage/>}/>
         <Route path="/signup" element={<SignupFlow />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
-    </Router>
+    
   );
 }
 

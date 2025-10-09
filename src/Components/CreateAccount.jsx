@@ -40,7 +40,7 @@ const CreateAccount = ({ onContinue }) => {
         <img src="/Images/Logo.png" alt="logo"/>
       </div>
 
-        <h2>Create an Account</h2>
+        <h2 className="acct">Create an Account</h2>
             <ProgressBar step={1} />
 
             {/*form section */}

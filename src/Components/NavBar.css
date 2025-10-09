@@ -66,3 +66,7 @@
 .signup-btn:hover {
   background: #1d4ed8;
 }
+
+@media (max-width:500px){
+
+}
