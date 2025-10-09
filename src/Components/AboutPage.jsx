@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./AboutPage.css";
 
 const AboutPage = () => {
@@ -17,18 +18,18 @@ const AboutPage = () => {
 
       {/* Navbar */}
          <section className="about-section">
-      <nav className="navbar">
+      <nav className="navbarr">
        <div className="Logo">
         <img src="/Images/Logo.png" alt="logo"/>
       </div>
-        <ul className="nav-links">
+        <ul className="navbarr-links">
           <li>Home</li>
           <li>About</li>
           <li>FAQ</li>
           <li>Contact</li>
         </ul>
 
-        <button className="get-started">Get Started</button>
+         <Link to="/" className="get-started">Get Started</Link>
       </nav>
 
 
@@ -93,7 +94,7 @@ const AboutPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="cta">
+      <section className="cta-section">
         <h3>Ready to simplify your service search?</h3>
         <p>
           Join thousands of satisfied users and find your perfect professional
@@ -135,7 +136,7 @@ const AboutPage = () => {
 </section>
 <hr/>
       {/* Footer */}
-      <footer className="footer">
+      <footer className="footer-sector">
         <div className="footer-top">
 
           <div className="sector-1">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ServiceListing.css"
-import ProgressBar from ".Components/ProgressBar";
+import ProgressBar from "./ProgressBar";
 
 
 const ServiceListing = ({ onSubmit }) => {

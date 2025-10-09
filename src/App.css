@@ -19,16 +19,19 @@ body {
   background: white;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 .nav-links {
   display: flex;
   gap: 1.5rem;
   list-style: none;
 }
+
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
   color: #2563eb;
 }
+
 .btn-primary {
   background: #2563eb;
   color: white;
@@ -37,6 +40,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
+
 .btn-primary:hover {
   background: #1d4ed8;
 }
@@ -50,16 +54,20 @@ body {
   background: #f9fafb;
   flex-wrap: wrap;
 }
+
 .hero-text {
   max-width: 500px;
 }
+
 .hero-text h1 {
   font-size: 2.5rem;
   font-weight: bold;
 }
+
 .hero-text h1 span {
   color: #2563eb;
 }
+
 .hero-img img {
   max-width: 350px;
   width: 100%;
@@ -70,6 +78,7 @@ section {
   padding: 4rem 2rem;
   text-align: center;
 }
+
 h2 {
   font-size: 2rem;
   margin-bottom: 2rem;

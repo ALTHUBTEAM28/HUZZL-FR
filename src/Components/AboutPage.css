@@ -16,25 +16,25 @@
    height: 70vh;
 }
 
-.navbar{
+.navbarr{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
 }
 
-.nav-links{
+.navbarr-links{
     display: flex;
     list-style: none;
     gap: 3.5rem;
 }
 
-.nav-links li{
+.navbarr-links li{
     cursor: pointer;
     font-weight: 600;
 }
 
-.nav-links li:hover{
+.navbarr-links li:hover{
     text-decoration: underline;
     color: #fff;
 }
@@ -49,6 +49,7 @@
     font-weight: 200;
     margin-left: -2rem;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 .get-started:hover{
@@ -71,7 +72,7 @@ h1{
 
 .about-right{
 position: relative;
-top: -28.5rem;
+top: -24.1rem;
 left: 27rem;
 }
 
@@ -134,7 +135,7 @@ left: 27rem;
     background: #f1f6ff;
 }
 
-.cta{
+.cta-section{
     background-color: #092a5f;
     color: #fff;
     padding: 1rem;
@@ -252,10 +253,12 @@ hr{
     width: 100%;
 }
 
-.footer{
-
-    margin-top: 1rem;
+.footer-sector{
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
 }
+
 
 .footer-top{
     display: flex;
@@ -291,16 +294,17 @@ hr{
 
 .about-section{
  padding: 7px;
-   height: 52vh;
+   height: 64vh;
 }
 
 .Logo{
     margin-left: -5rem;
 }
 
-.nav-links{
+.navbarr-links{
     gap: 2.2rem;
-    margin-left: 1rem;
+    margin-left: 4rem;
+    font-size: 1.1rem;
 }
 
 .get-started{
@@ -309,29 +313,36 @@ hr{
     margin-left: 1rem;
 }
 
+h1{
+ text-align: left;
+}
+
 .subtitle{
-    font-size: 1.2rem;
-    margin-top: -1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
 .about-right{
 position: relative;
-top: -19.8rem;
+top: -24.2rem;
 left:21rem;
 }
 
 .about-left{
- margin-left: -2rem;
-   font-weight: 500;
-   line-height: 1.2;
+ margin-left: -4rem;
+   font-weight: 500; 
 }
 
 .about-left p{
-    font-size: 15px;
+    font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
 }
 
 .about-img{
-    width: 28vw;
+    width: 35vw;
 }
 
 .mission-vision{
@@ -343,6 +354,7 @@ left:21rem;
     flex: 1;
     min-width: 240px;
     padding: 1rem;
+    line-height: 2;
 }
 
 .subscribe-inner{
@@ -350,7 +362,12 @@ left:21rem;
 }
 
 .subscribe-left p{
-    font-size: 13px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.stay{
+     text-align: left;
 }
 
 .subscribe-right{
@@ -365,6 +382,10 @@ left:21rem;
     width: 15vw;
 }
 
+.subscribe-input::placeholder{
+    font-size: 13px;
+}
+
 .subscribe-btn{
     font-size: 14px;
     width: 11vw;
@@ -375,11 +396,11 @@ left:21rem;
     text-align: center;
     margin-left: 16rem;
     margin-top: -.5rem;
-    font-size: .65rem;
+    font-size: .8rem;
 }
 
 .footer-top{
-    gap: .5rem;
+    gap: 2rem;
     padding: 1rem .5rem;
 }
 
@@ -402,16 +423,16 @@ left:21rem;
 
 .about-section{
  padding: 5px;
-   height: 56vh;
+   height: 73vh;
 }
 
 .Logo{
     margin-left: -6rem;
 }
 
-.nav-links{
+.navbarr-links{
     gap: 1rem;
-    margin-left: -1rem;
+    margin-left: 2.5rem;
 }
 
 .get-started{
@@ -419,6 +440,9 @@ left:21rem;
     font-size: 12px;
 }
 
+.about-left{
+    margin-left: -1rem;
+}
 h1{
     font-size: 1.8rem;
 }
@@ -429,18 +453,18 @@ h1{
 
 .about-right{
 position: relative;
-top: -21.7rem;
+top: -20.5rem;
 left: 15rem;
 }
 
 .about-img{
-    width: 48vw;
+    width: 45vw;
 }
 
 .mission-vision{
   gap: 2rem;
   padding: 2rem;
-  margin-left: 1rem;
+  margin-left: -3rem;
 }
 
 .mission, .vision{
@@ -507,7 +531,7 @@ left: 15rem;
 }
 
 .footer-top{
-    gap: .5rem;
+    gap: 2rem;
     padding: 1rem .5rem;
 }
 
@@ -517,6 +541,11 @@ left: 15rem;
 }
 
 .footer-top p{
+    font-size: 15px;
+}
+
+.footer-copy{
+    margin-top: 1.2rem;
     font-size: 15px;
 }
 }
@@ -530,7 +559,7 @@ left: 15rem;
 
 .about-section{
  padding: 5px;
-   height: 75vh;
+   height: 80vh;
    width: 120vw;
 }
 
@@ -538,7 +567,7 @@ left: 15rem;
     margin-left: -6rem;
 }
 
-.nav-links{
+.navbarr-links{
     gap: 1.7rem;
 }
 
@@ -579,14 +608,17 @@ left: 18rem;
 }
 
 .mission, .vision{
-    min-width: 170px;
+    min-width: 200px;
     margin-left: 2rem;
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 1.4;
 }
 
 
 .faq h3{
     margin-left: -2rem;
+    white-space: nowrap;
+    font-size: 1.6rem;
 }
 
 .faq-list{
@@ -607,10 +639,10 @@ left: 18rem;
     font-size: 1.5rem;
 }
 
-.cta{
+.cta-section{
     padding: 1rem;
     width: 100vw;
-    margin-left: -2rem;
+    margin-left: 2rem;
 }
 
 .cta h3{
@@ -665,18 +697,18 @@ left: 18rem;
 .footer-top{
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
-    padding: 1rem 1rem;
+    gap: 2rem;
     margin-top: -2rem;
+    text-align: left;
 }
 
 .footer-top h4{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 
 }
 
 .footer-top p{
-    font-size: 16px;
+    font-size: 19px;
 }
 
 .footer-logo{
@@ -689,22 +721,11 @@ hr{
     margin-left: -4rem;
 }
 
-.sector-2{
-    margin-right: -2rem;
-}
-
-.sector-4{
-    margin-right: -4rem;
-}
-
-.sector-5{
-    margin-left: 4rem;
-     white-space: nowrap;
-}
 
 .footer-copy{
     margin-left: 5rem;
     margin-right: -9rem;
     font-size: 16px;
+    white-space: nowrap;
 }
 }
