@@ -2,9 +2,17 @@ import React from "react";
 
 export default function CTA() {
   return (
-    <section className="cta">
-      <h2>Ready to simplify your service search?</h2>
-      <button className="btn-primary">Get Started</button>
-    </section>
+   <section className="cta">
+        <h3>Ready to simplify your service search?</h3>
+        <p>
+          Join thousands of satisfied users and find your perfect professional
+          today
+        </p>
+
+        <div className="cta-buttons">
+          <button className="cta-btn">Get Started</button>
+          <button className="cta-btnn2">Learn more</button>
+        </div>
+      </section>
   );
 }

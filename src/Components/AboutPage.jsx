@@ -23,7 +23,7 @@ const AboutPage = () => {
         <img src="/Images/Logo.png" alt="logo"/>
       </div>
         <ul className="navbarr-links">
-          <li>Home</li>
+          <li> <Link to="/">Home</Link></li>
           <li>About</li>
           <li>FAQ</li>
           <li>Contact</li>

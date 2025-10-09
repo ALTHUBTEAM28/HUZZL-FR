@@ -160,6 +160,7 @@ left: 27rem;
     cursor: pointer;
     font-size: .8rem;
     border-radius: 13px;
+       font-weight: 600;
 }
 
 .cta-btn2{
@@ -170,19 +171,27 @@ left: 27rem;
     font-size: .8rem;
         border-radius: 13px;
         border: 1px solid #041735;
+           font-weight: 600;
 }
 
 .subscribe-section{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 8px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 8rem;
+  align-items: start;
+
 }
 
 .subscribe-inner{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 6rem;
+}
+
+.subscribe-left{
+    white-space: nowrap;
+    margin-right: 3rem;
 }
 
 .subscribe-left h3{
@@ -232,8 +241,8 @@ left: 27rem;
 
 .privacy-text{
     text-align: center;
-    margin-left: 27rem;
-    margin-top: -.5rem;
+    margin-left: -30rem;
+    margin-top: 3rem;
     font-size: .9rem;
 }
 
@@ -393,9 +402,8 @@ left:21rem;
 }
 
 .privacy-text{
-    text-align: center;
-    margin-left: 16rem;
-    margin-top: -.5rem;
+    text-align: right;
+    margin-top: -2rem;
     font-size: .8rem;
 }
 
@@ -586,7 +594,7 @@ h1{
 
 .about-right{
 position: relative;
-top: -20rem;
+top: -18.5rem;
 left: 18rem;
 }
 
