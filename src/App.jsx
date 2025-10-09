@@ -48,7 +48,7 @@ const SignupFlow = () => {
 
 function App() {
   return (
-    
+    <Router>
       <Routes>
         {/* Landing Page */}
         <Route
@@ -68,13 +68,12 @@ function App() {
         />
 
         {/* Signup Flow */}
-         <Route path="/" element={<landingPage/>}/>
         <Route path="/signup" element={<SignupFlow />} />
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/create-account" element={<CreateAccount />} />
       </Routes>
-    
+    </Router>
   );
 }
 
