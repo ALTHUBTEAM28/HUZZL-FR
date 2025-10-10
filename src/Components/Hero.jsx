@@ -12,7 +12,7 @@ export default function Hero() {
           Find trusted handymen, cleaners, and more with ease. Simplify your
           service search today.
         </p>
-        <button className="btn-primary">Book a Service</button>
+        <button className="btn-primary">Book a PRO</button>
       </div>
       <div className="hero-img">
         <img src={heroImg} alt="Huzzl worker" />
