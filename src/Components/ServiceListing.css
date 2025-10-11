@@ -13,7 +13,7 @@
 .access-3{
     position: relative;
     top: 42rem;
-    left: 33rem;
+    left: 13rem;
     color: #fff;
     line-height: 1.5;
 }
@@ -25,7 +25,7 @@
     min-height: 80vh;
     max-width: 400px;
     margin: 80px auto;
-        margin-left: 60rem;
+     margin-left: 50rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba( 0, 0, 0, 0.5);
 }

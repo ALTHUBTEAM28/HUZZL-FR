@@ -18,7 +18,10 @@ import ServiceListing from "./Components/ServiceListing";
 import SuccessPage from "./Components/SuccessPage";
 import AboutPage from "./Components/AboutPage";
 import Login from "./Components/Login";
-
+import ProfilePage from "./Components/ProfilePage";
+import VendorProfile, { exampleVendorData } from "./Components/VendorProfile";
+import ClientDashboard from "./Components/ClientDashboard";
+import VendorDashboard from "./Components/VendorDashboard"; 
 import "./App.css";
 
 const SignupFlow = () => {
@@ -73,6 +76,12 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/create-account" element={<CreateAccount />} />
+        <Route path="/profile-page" element={<ProfilePage />} />
+        <Route path="/vendor/:id" element={<VendorProfile vendorData={exampleVendorData} />} />
+        <Route path="/vendor-dashboard" element={<VendorDashboard />} />
+        <Route path="/client-dashboard" element={<ClientDashboard/>} />
+
+
       </Routes>
     
   );

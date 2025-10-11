@@ -14,10 +14,10 @@ export default function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/services">Services</Link>
+          <Link to="/profile-page">Profile fri</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/vendor/:id">Profile</Link>
         </li>
         <li>
           <Link to="/about">About us</Link>

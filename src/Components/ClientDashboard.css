@@ -1,0 +1,287 @@
+.client-dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  grid-template-columns: 250px 1fr;
+  color: #000;
+  background: #f9f9fb;
+  font-family: "Poppins", sans-serif;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+   
+}
+
+
+/* Sidebar */
+.sidebar-client {
+  width: 200px;
+  background-color: #1b3a6e;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+
+/* Main Content */
+.client-main {
+  flex: 1;
+  padding: 2rem 3rem;
+  background: #fff;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+/* Header */
+.client-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.client-header-text h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.client-header-text h2 {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+}
+
+.client-header-text span {
+  color: #000;
+  font-weight: 600;
+}
+
+.client-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+/* Stats Section */
+.client-stats {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.stat-box {
+  flex: 1;
+  background: #f5f6fa;
+  border-radius: 8px;
+  padding: 1rem;
+ align-items: start;
+  border: 1px solid #e3e3e3;
+  width: 7rem;
+}
+
+.stat-box h3 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 0.4rem;
+ 
+}
+
+.stat-box p {
+  color: #000;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+/* Bookings Section */
+.client-bookings-section {
+  display: flex;
+  gap: 2rem;
+}
+
+
+/* Left side */
+.bookings-left {
+  flex: 2;
+}
+
+.bookings-left h3{
+    margin-bottom: 1rem;
+}
+.bookings-tabs {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.bookings-tabs span {
+  color: #555;
+  font-size: 1rem;
+  cursor: pointer;
+   font-weight: 600;
+}
+
+
+.bookings-tabs .active {
+  font-weight: 600;
+}
+
+.bookings-table {
+  border: 1px solid #e3e3e3;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.table-head {
+  font-weight: 600;
+  background: #f5f6fa;
+}
+
+.client-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: #1b3a6e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #1b3a6e;
+  color: #000;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+ padding: .4rem 1rem;
+ white-space: nowrap;
+ font-size: .8rem;
+}
+
+.btn-outline:hover{
+    color: #fff;
+}
+/* Messages */
+.messages-right {
+  flex: 1;
+}
+
+.message-box {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 6px;
+  color: #333;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .client-main {
+    padding: 1.5rem 2rem;
+  }
+
+  .client-stats {
+    gap: 1rem;
+  }
+
+  .stat-box h3 {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+ .client-dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar-client {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .client-main {
+    margin: 0;
+    border-radius: 0;
+    padding: 1.5rem;
+  }
+
+  .client-stats {
+    flex-direction: column;
+  }
+
+  .client-bookings-section {
+    flex-direction: column;
+  }
+
+  .client-buttons {
+    flex-direction: column;
+  }
+
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+  }
+
+  .table-head {
+    font-size: 0.85rem;
+  }
+
+  .client-avatar {
+    width: 65px;
+    height: 65px;
+  }
+
+
+  .client-header-text h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .table-row {
+    grid-template-columns: 1fr; 
+  }
+
+  .client-main {
+    padding: 1rem;
+  }
+
+
+  .client-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .client-header-text h2 {
+    font-size: 1rem;
+  }
+
+  .stat-box h3 {
+    font-size: 1rem;
+  }
+
+}

@@ -27,7 +27,7 @@ export default function Footer() {
   </form>
   </div>
   </div>
-  <p className="privacy-text">
+  <p className="privacy-textt">
     By subscribing, you agree to our <a href="/privacy">privacy policy.</a>
   </p>
 </section>

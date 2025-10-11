@@ -1,7 +1,7 @@
 .main-container{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #222;
+    color: #000;
     max-width: 800px;
     margin-left: 20rem;
 }
@@ -23,6 +23,16 @@
     padding: 1rem 2rem;
 }
 
+.home-btn{
+    text-decoration: none;
+    color: #000;
+}
+
+.home-btn:hover{
+    
+    text-decoration: underline;
+    color: #fff;
+}
 .navbarr-links{
     display: flex;
     list-style: none;
