@@ -1,0 +1,42 @@
+.sidebar-client {
+  width: 230px;
+    background-color: #03398c;
+  border-right: 1px solid #eee;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: #fff;
+}
+
+.sidebar-client h2{
+    margin-top: 1rem;
+}
+.sidebar-client nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-client nav img{
+    width: 55px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+.sidebar-client nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.sidebar-client nav a.active,
+.sidebar-client nav a:hover {
+  background: #004aad;
+  color: #fff;
+  border-radius: 12px;
+}
+
+Link:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,38 @@
+.sidebar-vendor {
+  width: 230px;
+ background-color: #03398c;
+  border-right: 1px solid #eee;
+  padding: 25px;
+}
+
+.sidebar-vendor .logo {
+  font-size: 1.5rem;
+  color: #004aad;
+  margin-bottom: 30px;
+}
+
+.sidebar-vendor nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-vendor nav img{
+    width: 55px;
+    height: 20px;
+    vertical-align: text-bottom;
+}
+.sidebar-vendor nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+
+.sidebar-vendor nav a:hover,
+.sidebar-vendor nav a.active {
+  background: #004aad;
+  color: #fff;
+}

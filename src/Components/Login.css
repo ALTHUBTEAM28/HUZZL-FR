@@ -16,6 +16,7 @@
 
 .signin-left{
     margin-right: 1rem;
+    width: 40rem;
 }
 
 .signin-right{
@@ -36,8 +37,8 @@
 
 .back-link{
     position: absolute;
-    top: 13rem;
-      left: 25rem;
+    top: 16rem;
+      left: 24rem;
     background: transparent;
     background-color: #bebebe;
     padding: 10px 15px;
@@ -141,17 +142,30 @@
     font-size: 14px;
 }
 
-.signin-btn{
-    margin-top: 1rem;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
+.login-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 1.1rem;
+}
+
+.signin-btn.vendor{
     background-color: #03398c;
-    color: #fff;
-    border-radius: 6px;
     cursor: pointer;
 }
 
+.signin-btn.vendor:hover{
+    background-color:#2563eb ;
+}
+
+.signin-btn.client{
+        background-color: #03398c;
+        cursor: pointer;
+}
+
+.signin-btn.client:hover{
+    background-color: #2563eb;
+}
 .signup-text{
    margin-top: 20px;
     font-size: 18px;
@@ -261,6 +275,17 @@
 }
 
 
+.signin-btn.vendor{
+     white-space: nowrap;
+     font-size: 12px;
+     margin-left: -10px;
+}
+
+.signin-btn.client{
+     white-space: nowrap;
+     font-size: 12px;
+}
+
 .signin-btn{
     margin-top: 1rem;
     padding: 12px;
@@ -314,8 +339,8 @@
 
 .back-link{
     position: absolute;
-    top: 11rem;
-      left: 3rem;
+    top: 15rem;
+      left: 3.5rem;
     padding: 5px 5px;
       font-weight: 700;
 }

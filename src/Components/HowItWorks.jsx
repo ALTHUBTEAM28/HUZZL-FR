@@ -17,7 +17,7 @@ export default function HowItWorks() {
                 <h3>Book</h3>
                 <h4>Schedule Your Service</h4>
                 <p>Select convenient time slots and confirm booking.</p>
-                  <button className="btn-secondary">Book Now</button>
+                  <button className="btn-secondary2">Book Now</button>
               </div>
       
               <div className="step">
