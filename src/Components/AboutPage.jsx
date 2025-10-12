@@ -23,13 +23,13 @@ const AboutPage = () => {
         <img src="/Images/Logo.png" alt="logo"/>
       </div>
         <ul className="navbarr-links">
-          <li> <Link to="/" className="home-btn">Home</Link></li>
+     
           <li>About</li>
           <li>FAQ</li>
           <li>Contact</li>
         </ul>
 
-         <Link to="/" className="get-started">Get Started</Link>
+         <Link to="/signup" className="get-started">Get Started</Link>
       </nav>
 
 
