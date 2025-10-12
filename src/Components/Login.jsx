@@ -134,7 +134,7 @@ const Login = () => {
               className={`role-btn ${selectedRole === "client" ? "active" : ""}`}
               onClick={() => setSelectedRole("client")}
             >
-              Continue as Client
+               <Link to="/client-dashboard" className="client-link">Continue as Client</Link> 
             </button>
 
             <button
@@ -142,7 +142,7 @@ const Login = () => {
               className={`role-btn ${selectedRole === "vendor" ? "active" : ""}`}
               onClick={() => setSelectedRole("vendor")}
             >
-              Continue as Vendor
+               <Link to="/vendor-dashboard" className="vendor-link">Continue as Vendor</Link>
             </button>
           </div>
 

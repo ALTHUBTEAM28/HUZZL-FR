@@ -71,7 +71,7 @@
   flex: 1;
   background: #f5f6fa;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 1rem 4rem;
  align-items: start;
   border: 1px solid #b4abab;
   width: 5rem;
@@ -81,7 +81,6 @@
   font-size: 1.5rem;
   color: #000;
   margin-bottom: 0.4rem;
- 
 }
 
 .stat-box p {
@@ -289,6 +288,14 @@
 
   .stat-box h3 {
     font-size: 1rem;
+    margin-left: -3rem;
   }
 
+  .stat-box p{
+    margin-left: -3rem;
+  }
+
+  .messages-right{
+    margin-bottom: 2rem;
+  }
 }

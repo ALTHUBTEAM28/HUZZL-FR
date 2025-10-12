@@ -214,7 +214,15 @@ form input:focus {
   color: #fff;
 }
 
+.vendor-link{
+    text-decoration: none;
+    color: #03398c;
+}
 
+.client-link{
+    text-decoration: none;
+    color: #03398c;
+}
 
 /* Login button */
 .login-btn {
