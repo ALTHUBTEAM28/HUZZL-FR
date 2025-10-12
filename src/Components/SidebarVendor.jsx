@@ -6,7 +6,9 @@ import "./SidebarVendor.css";
 const SidebarVendor = () => {
   return (
     <div className="sidebar-vendor">
-      <h2 className="logo">Huzl</h2>
+      <div className="logo-container">
+      <img src="/Images/Logo.png" alt="logo" className="logo-dash" />
+        </div>
       <nav>
         <NavLink to="/vendor-dashboard" activeclassname="active">
          <img src="/Images/dashboard.svg" alt="dashboard" /> Dashboard
@@ -15,7 +17,7 @@ const SidebarVendor = () => {
           <img src="/Images/file.svg" alt="job" />My Jobs
         </NavLink>
         <NavLink to="/vendor-reviews" activeclassname="active">
-           <img src="/Images/award.svg" alt="review" /> Reviews
+           <img src="/Images/review.svg" alt="review" /> Reviews
         </NavLink>
         <NavLink to="/vendor-portfolio" activeclassname="active">
         <img src="/Images/portfolio.svg" alt="portfolio" />  Portfolio

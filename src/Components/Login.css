@@ -425,8 +425,8 @@
 
 .back-link{
     position: absolute;
-    top: 10rem;
-      left: 1.5rem;
+    top: 15rem;
+      left: 3rem;
     padding: 5px 1px;
     font-weight: 600;
 }
@@ -434,7 +434,7 @@
 .signin-container h2{
     margin-top: 4.5rem;
     font-size: 15.5px;
-    margin-left: -1.1rem;
+    margin-left: -.7rem;
 }
 
 .social-login{
@@ -473,9 +473,11 @@
     font-size: 13px;
 }
 
-.signin-btn{
-    padding: 10px;
-    margin-top: 2rem;
+.login-buttons{
+      display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 75%;
 }
 
 .signup-text{
@@ -492,4 +494,11 @@
     color: #03398c;
 }
 
+.signin-btn.client{
+    width: 35vw;
+}
+.signin-btn.vendor{
+    margin-left: .2rem;
+    width: 35vw;
+}
 }

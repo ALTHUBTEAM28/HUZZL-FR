@@ -1,13 +1,8 @@
 .vendor-dashboard {
-
   display: flex;
-
   background: #f8f9fb;
-
   min-height: 100vh;
-
   font-family: "Poppins", sans-serif;
-
 }
 
 
@@ -27,26 +22,20 @@
 /* --------- Topbar --------- */
 
 .vendor-topbar {
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
-
   margin-bottom: 2rem;
+  margin-top: -1.5rem;
 
 }
 
 
 
 .vendor-topbar h2 {
-
   font-size: 1.8rem;
-
   font-weight: 600;
-
-  color: #333;
+color: #03398c;
 
 }
 

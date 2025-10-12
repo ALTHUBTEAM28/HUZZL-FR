@@ -40,3 +40,44 @@
 Link:hover{
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+
+  .sidebar-client {
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid #eee;
+    padding: 10px 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .sidebar-client nav {
+    flex-direction: row;
+    gap: 2px;
+    width: 100%;
+    white-space: nowrap;
+    justify-content: space-around;
+    margin-left: -14rem;
+    margin-top: 5rem;
+  }
+
+    .sidebar-client nav img{
+    display: none;
+}
+
+
+  .sidebar-client nav a {
+    font-size: 11px;
+    padding: 4px 2px;
+  }
+
+  .sidebar-client nav a.active,
+  .sidebar-client nav a:hover {
+    background: #004aad;
+    color: #fff;
+  }
+
+}
+
