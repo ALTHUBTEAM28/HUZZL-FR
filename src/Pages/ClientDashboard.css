@@ -73,8 +73,8 @@
   border-radius: 8px;
   padding: 1rem;
  align-items: start;
-  border: 1px solid #e3e3e3;
-  width: 7rem;
+  border: 1px solid #b4abab;
+  width: 5rem;
 }
 
 .stat-box h3 {
@@ -124,7 +124,7 @@
 }
 
 .bookings-table {
-  border: 1px solid #e3e3e3;
+  border: 1px solid #b4abab;
   border-radius: 6px;
   overflow: hidden;
   margin-bottom: 1.5rem;
@@ -175,6 +175,8 @@
 /* Messages */
 .messages-right {
   flex: 1;
+  margin-top: 2rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .message-box {
@@ -185,6 +187,11 @@
   border-radius: 6px;
   color: #333;
   line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+}
+.message-box h3{
+  text-align: center;
 }
 
 @media (max-width: 1024px) {

@@ -3,25 +3,25 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Landing Page Components
 import Navbar from "./Components/NavBar";
-import Hero from "./Components/Hero";
-import WhyChoose from "./Components/WhyChoose";
-import HowItWorks from "./Components/HowItWorks";
-import Categories from "./Components/Categories";
-import Features from "./Components/Features";
-import CTA from "./Components/CTA";
-import Footer from "./Components/Footer";
+import Hero from "./Pages/Hero";
+import WhyChoose from "./Pages/WhyChoose";
+import HowItWorks from "./Pages/HowItWorks";
+import Categories from "./Pages/Categories";
+import Features from "./Pages/Features";
+import CTA from "./Pages/CTA";
+import Footer from "./Pages/Footer";
 
 // Signup Flow Components
-import CreateAccount from "./Components/CreateAccount";
-import ProfileSetup from "./Components/ProfileSetup";
-import ServiceListing from "./Components/ServiceListing";
-import SuccessPage from "./Components/SuccessPage";
-import AboutPage from "./Components/AboutPage";
+import CreateAccount from "./Pages/CreateAccount";
+import ProfileSetup from "./Pages/ProfileSetup";
+import ServiceListing from "./Pages/ServiceListing";
+import SuccessPage from "./Pages/SuccessPage";
+import AboutPage from "./Pages/AboutPage";
 import Login from "./Components/Login";
-import ProfilePage from "./Components/ProfilePage";
-import VendorProfile, { exampleVendorData } from "./Components/VendorProfile";
-import ClientDashboard from "./Components/ClientDashboard";
-import VendorDashboard from "./Components/VendorDashboard"; 
+import ProfilePage from "./Pages/ProfilePage";
+import VendorProfile, { exampleVendorData } from "./Pages/VendorProfile";
+import ClientDashboard from "./Pages/ClientDashboard";
+import VendorDashboard from "./Pages/VendorDashboard"; 
 import "./App.css";
 
 const SignupFlow = () => {

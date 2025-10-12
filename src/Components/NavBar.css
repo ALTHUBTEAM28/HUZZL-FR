@@ -2,71 +2,99 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  background: white;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  position: relative;
 }
 
-.navbar-logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #0a4aa7;
-  text-decoration: none;
-}
-
-.navbar-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.navbar-links a {
-  text-decoration: none;
-  color: #111827;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.navbar-links a:hover {
-  color: #2563eb;
-}
-
+/* Desktop links */
+.navbar-links,
 .navbar-buttons {
   display: flex;
   gap: 1rem;
 }
 
-.btn {
-  padding: 0.5rem 1.2rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
+.navbar-logo a{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #03398c;
   text-decoration: none;
-  transition: all 0.2s ease;
+}
+/* Hamburger - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
 }
 
-.login-btn  {
-  border: 1px solid #111827;
-  color: #111827;
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #03398c;
+  transition: all 0.3s ease;
 }
 
-.login-btn:hover {
-  background: #f3f4f6;
+/* Animate bars when open */
+.hamburger .bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.signup-btn {
-  background: #2563eb;
-  color: white;
-  border: none;
+.hamburger .bar.open:nth-child(2) {
+  opacity: 0;
 }
 
-.signup-btn:hover {
-  background: #1d4ed8;
+.hamburger .bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width:500px){
 
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links,
+  .navbar-buttons{
+    display: block;
+  }
+  
+  .navbar-links,
+  .navbar-buttons {
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar-links.active,
+  .navbar-buttons.active {
+    max-height: 500px; 
+    padding: 1rem 2rem;
+  }
+
+  .navbar-links li {
+    margin: 0.5rem 0;
+  }
+
+  .navbar-buttons {
+   display: flex;
+   flex-direction: column;
+   margin-top: 1rem;
+   gap: .5rem;
+
+  }
+
+  .mobile-menu.active{
+    max-height: 500px;
+    padding: 1rem 2rem;
+  }
 }
+

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ProfileSetup.css";
 import ProgressBar from "./ProgressBar";
 
+
 const ProfileSetup = ({ onContinue }) => {
   const [profileData, setProfileData] = useState({
     bio: "",
@@ -9,19 +10,23 @@ const ProfileSetup = ({ onContinue }) => {
     document: null,
     profileImage: null,
   });
+  const [loading, setLoading] = useState(false);
 
   const handleImageChange = (e) => {
     if (e.target.files && e.target.files[0]) {
       const file = e.target.files[0];
       setProfileData({
         ...profileData,
-        profileImage: URL.createObjectURL(file),
+        profileImage: file,
+        profileImagePreview: URL.createObjectURL(file),
       });
     }
   };
+
   const handleChange = (e) => {
     setProfileData({ ...profileData, [e.target.name]: e.target.value });
   };
+
 
   const handleFileChange = (e) => {
     setProfileData({
@@ -32,13 +37,58 @@ const ProfileSetup = ({ onContinue }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onContinue(profileData);
-  };
+    if (typeof onContinue === "function") {
+      onContinue(profileData);
+    }
+  }
+/*
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { bio, description, document, profileImage } = profileData;
+    if (!bio || !description || !document || !profileImage) {
+      alert("All fields are required.");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const formData = new FormData();
+      formData.append("bio", bio);
+      formData.append("description", description);
+      formData.append("document", document);
+      formData.append("profileImage", profileImage);
+
+
+      const response = await fetch("http://localhost:5000/api/auth/profile-setup", {
+        method: "POST",
+        body: formData,
+
+      })
+
+      const data = await response.json();
+      setLoading(false);
+
+      if (!response.ok) {
+        alert(data.message || "Failed to save profile. Try again.");
+        return;
+      }
+
+      alert("Profile setup completed successfully!");
+      onContinue(data);
+    } catch (error) {
+      setLoading(false);
+      console.error("Profile setup error:", error);
+      alert("Something went wrong. Please try again later.");
+    }
+  };*/
+
 
   return (
     <div className="page-profile">
       <h2 className="access-2">
-        Get access to over 100M+ <br /> clients who needs your services
+        Get access to over 100M+ <br /> clients who need your services
       </h2>
       <div className="card-2">
         <div className="logo">
@@ -48,20 +98,18 @@ const ProfileSetup = ({ onContinue }) => {
 
         <ProgressBar step={2} />
 
-        {/* form*/}
         <form onSubmit={handleSubmit}>
+          {/* Profile Image */}
           <div className="profile-image-upload">
             <label htmlFor="profileImage">
-              {/* profile-image sector*/}
               <div className="image-preview">
-                {profileData.profileImage ? (
-                  <img src={profileData.profileImage} alt="Profile" />
+                {profileData.profileImagePreview ? (
+                  <img src={profileData.profileImagePreview} alt="Profile" />
                 ) : (
                   <span className="upload-placeholder">+</span>
                 )}
               </div>
             </label>
-
             <input
               type="file"
               id="profileImage"
@@ -72,7 +120,8 @@ const ProfileSetup = ({ onContinue }) => {
             />
           </div>
 
-          {/* bio*/}
+
+          {/* Bio */}
           <label>Bio</label>
           <input
             type="text"
@@ -83,7 +132,7 @@ const ProfileSetup = ({ onContinue }) => {
             required
           />
 
-          {/*description */}
+          {/* Description */}
           <label>Description</label>
           <textarea
             name="description"
@@ -93,19 +142,20 @@ const ProfileSetup = ({ onContinue }) => {
             required
           />
 
+          {/* Document */}
+
           <label>Business Verification Document</label>
           <div className="document-upload">
+
             <label htmlFor="documentUpload" className="upload-box">
               <span className="upload-icon">
-                {" "}
-                <img src="/Images/arrow up.svg" />{" "}
+                <img src="/Images/arrow up.svg" alt="upload" />
               </span>
               <span className="upload-text">
-                {profileData.document ? profileData.document.name : ""}
+                {profileData.document ? profileData.document.name : "Upload document"}
               </span>
             </label>
 
-            {/* document upload*/}
             <input
               type="file"
               id="documentUpload"
@@ -116,11 +166,15 @@ const ProfileSetup = ({ onContinue }) => {
             />
           </div>
 
-          <button type="submit">Continue</button>
+          <button type="submit" disabled={loading}>
+            {loading ? "Saving..." : "Continue"}
+          </button>
         </form>
       </div>
     </div>
   );
 };
 
+
 export default ProfileSetup;
+

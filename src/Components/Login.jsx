@@ -1,34 +1,73 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Login = () => {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
-
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [selectedRole, setSelectedRole] = useState(null);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
-
-  const handleVendorLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    console.log("Vendor Login Data:", formData);
-    navigate("/vendor-dashboard");
-  };
 
 
-  const handleClientLogin = (e) => {
-    e.preventDefault();
-    console.log("Client Login Data:", formData);
-    navigate("/client-dashboard");
+    if (!selectedRole) {
+      alert("Please choose to continue as Client or Vendor.");
+      return;
+    }
+
+
+    setLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+
+      const data = await response.json();
+      setLoading(false);
+
+
+      if (!response.ok) {
+        // Handle backend errors
+        alert(data.message || "Login failed. Try again.");
+        return;
+      }
+
+
+      // Check role
+      if (data.user.role !== selectedRole) {
+        alert("You do not have this type of account.");
+        return;
+      }
+
+
+      // Successful login
+      alert(`Welcome back, ${data.user.name}!`);
+      localStorage.setItem("loggedInUser", JSON.stringify(data.user));
+
+
+      if (selectedRole === "client") navigate("/client-dashboard");
+      else navigate("/vendor-dashboard");
+    } catch (error) {
+      setLoading(false);
+      console.error("Login error:", error);
+      alert("Something went wrong. Please try again later.");
+    }
   };
+
 
   return (
-    <div className="signin-container">
+    <div className="login-container">
+<div className="signin-container">
       {/* Left side with worker image and logo */}
       <div className="signin-left">
         <img src="/Images/Logo.png" alt="logo" className="logo-huzzl" />
@@ -63,51 +102,64 @@ const Login = () => {
           </button>
         </div>
 
-        {/* Divider */}
-        <div className="divider"></div>
+
+
         <p className="or-text">or log in by using email address</p>
 
-        {/* Form */}
-        <form>
+        <form onSubmit={handleLogin}>
           <label>Email</label>
           <input
             type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
             required
+
           />
+
 
           <label>Password</label>
           <input
             type="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter your password"
             required
           />
 
-          {/* Two separate login buttons */}
-          <div className="login-buttons">
-            <button className="signin-btn vendor" onClick={handleVendorLogin}>
-              Login as Vendor
+
+          <div className="role-buttons">
+            <button
+              type="button"
+              className={`role-btn ${selectedRole === "client" ? "active" : ""}`}
+              onClick={() => setSelectedRole("client")}
+            >
+              Continue as Client
             </button>
-            <button className="signin-btn client" onClick={handleClientLogin}>
-              Login as Client
+
+            <button
+              type="button"
+              className={`role-btn ${selectedRole === "vendor" ? "active" : ""}`}
+              onClick={() => setSelectedRole("vendor")}
+            >
+              Continue as Vendor
             </button>
           </div>
+
+
+          <button type="submit" className="login-btn" disabled={loading}>
+            {loading ? "Logging in..." : "Log In"}
+          </button>
         </form>
 
-
-        {/* Signup link */}
         <p className="signup-text">
-          Don't have an account? <Link to="/create-account">Sign Up</Link>
+          Don't have an account? <Link to="/signup" className="signup">Sign Up</Link>
         </p>
       </div>
-    </div>
+      </div>
+      </div>
   );
+
 };
 
-
 export default Login;
-

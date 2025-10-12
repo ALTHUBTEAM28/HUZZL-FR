@@ -26,7 +26,7 @@
      margin-left: 50rem;
     min-height: 80vh;
     max-width: 400px;
-    line-height: 2;
+    line-height: 1;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba( 0, 0, 0, 0.5);
 }
@@ -44,10 +44,11 @@ form{
     flex-direction: column;
 }
 
-label{
+.page-create label{
     margin: 10px 0 5px;
     font-weight: 500;
     display: block;
+     color: #2563eb;
 }
 
 input, select{
@@ -144,6 +145,7 @@ button{
 
 .privacy p{
     font-size: .9rem;
+    margin-bottom: 1rem;
 }
 
 .privacy a{
@@ -240,11 +242,19 @@ button{
 
 .access{
     position: relative;
-    top: 59rem;
+    top: 69rem;
     left: 3.5rem;
     font-size: 1rem;
 }
 
+
+.full-name, .location{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    width: 10rem;
+}
 
 .logo{
     margin-left: 10rem;
@@ -252,16 +262,19 @@ button{
 
 .character{
     font-size: 12px;
+    margin-top: -10px;
 }
 .sign-in{
     font-size: 13px;
+    margin-top: 1rem;
 }
 
 .privacy p{
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 3rem;
 }
 
 .privacy a{
-    font-size: 11px;
+    font-size: 13px;
 }
 }

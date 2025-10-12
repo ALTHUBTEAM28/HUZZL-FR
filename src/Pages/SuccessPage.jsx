@@ -1,5 +1,6 @@
 import React from "react";
 import "./SuccessPage.css";
+import { Link } from "react-router-dom";
 
 const SuccessPage = () => {
   return (
@@ -17,7 +18,7 @@ const SuccessPage = () => {
           is as smooth and authentic as it should be. Here's what we've done:
           Squashed pesky bugs, so nothing gets in the way of your real moments.
         </p>
-        <button className="explore-btn">Explore</button>
+       <Link to="/" className="explore-btn">Explore</Link>
       </div>
     </div>
   );

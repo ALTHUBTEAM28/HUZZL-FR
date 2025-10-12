@@ -1,37 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(prev => !prev);
+  };
+
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">Huzzl</Link>
+       <img src="/Images/Logo.png" alt="logo" className="logo-nav" />
       </div>
 
-      <ul className="navbar-links">
+      {/* Hamburger icon for mobile */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <span className={`bar ${isOpen ? "open" : ""}`}></span>
+        <span className={`bar ${isOpen ? "open" : ""}`}></span>
+        <span className={`bar ${isOpen ? "open" : ""}`}></span>
+      </div>
+
+
+<div className={`mobile-menu $(isOpen ? "active" : ""}`}>     {/* Links */}
+      <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
         </li>
         <li>
-          <Link to="/profile-page">Profile fri</Link>
+          <Link to="/services" onClick={() => setIsOpen(false)}>Services</Link>
         </li>
         <li>
-          <Link to="/vendor/:id">Profile</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
         </li>
         <li>
-          <Link to="/about">About us</Link>
+          <Link to="/about" onClick={() => setIsOpen(false)}>About us</Link>
         </li>
       </ul>
 
-      <div className="navbar-buttons">
-        <Link to="/login" className="btn login-btn">
+
+      {/* Buttons */}
+      <div className={`navbar-buttons ${isOpen ? "active" : ""}`}>
+        <Link to="/login" className="btn login-btn" onClick={() => setIsOpen(false)}>
           Log In
         </Link>
-        <Link to="/create-account" className="btn signup-btn">
+        <Link to="/CreateAccount" className="btn signup-btn" onClick={() => setIsOpen(false)}>
           Sign Up
         </Link>
       </div>
+      </div>
+ 
     </nav>
+    
   );
 }
+
+
+       
