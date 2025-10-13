@@ -1,0 +1,10 @@
+version: 1.0
+
+build:
+  dockerfile: Dockerfile
+  image: huzzl-react-frontend:latest
+
+deploy:
+  environment: production
+  platform: pipeops-cloud  
+  image: huzzl-react-frontend:latest
