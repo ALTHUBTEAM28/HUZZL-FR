@@ -1,35 +1,21 @@
-# Step 1: Build the React app using Node.js 20
-FROM node:20 AS build
+# Example Dockerfile for Vite + React
+FROM node:16-alpine
 
-# Set working directory in the container
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy package.json and package-lock.json
-COPY package*.json ./
-
 # Install dependencies
+COPY package.json package-lock.json ./
 RUN npm install
 
-# Copy the rest of the source code
+# Copy the rest of the app files
 COPY . .
 
 # Build the app
 RUN npm run build
 
-# List the contents of /app/dist to verify that files are present
-RUN ls -R /app/dist  # This will show the files in the dist/ folder
+# Expose the port that the app will run on
+EXPOSE 3000
 
-# Step 2: Use Nginx to serve the built app
-FROM nginx:alpine
-
-# Copy the custom Nginx configuration file
-COPY default.conf /etc/nginx/conf.d/
-
-# Copy the build output from the build stage to the nginx server's html directory
-COPY --from=build /app/dist /usr/share/nginx/html
-
-# Expose port 80 to serve the app
-EXPOSE 80
-
-# Start Nginx in the foreground
-CMD ["nginx", "-g", "daemon off;"]
+# Start the app on 0.0.0.0 to allow external access
+CMD ["npm", "run", "start", "--", "--host", "0.0.0.0"]
