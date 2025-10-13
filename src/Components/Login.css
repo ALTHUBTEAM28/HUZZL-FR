@@ -253,7 +253,7 @@ form input:focus {
 .signup-text a {
   color: #2575fc;
   text-decoration: none;
-  font-weight: bold;
+ 
 }
 
 .signup-text a:hover {
@@ -365,7 +365,6 @@ form input:focus {
 
 .signup-text a{
     color: #000;
-    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
@@ -444,7 +443,6 @@ form input:focus {
 
 .signup-text a{
     color: #000;
-    font-weight: bold;
     text-decoration: none;
     cursor: pointer;
 }
@@ -459,7 +457,7 @@ form input:focus {
 @media (max-width:400px) {      
 .signin-container{
    gap: 15px;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     max-width: 600px;
 }
 
@@ -470,7 +468,7 @@ form input:focus {
 
 
 .signin-right{
-    margin-left: -3rem;
+    margin-left: -3.6rem;
 }
 
 .signin-left{
@@ -487,22 +485,22 @@ form input:focus {
 .back-link{
     position: absolute;
     top: 15rem;
-      left: 3rem;
+      left: 2.4rem;
     padding: 5px 1px;
     font-weight: 600;
 }
 
 .signin-container h2{
     margin-top: 4.5rem;
-    font-size: 15.5px;
-    margin-left: -.7rem;
+    font-size: 15px;
+    margin-left: -1rem;
 }
 
 .social-login{
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 75%;
+ width: 37vw;
 }
 
 .social-login button{
@@ -515,14 +513,14 @@ form input:focus {
     margin-top: -1rem;
 }
 
+
 .google{
     width: 100%;
     margin-left: -.2rem;
 }
 .signin-container p{
-    font-size: 12.5px;
-    margin-left: -18px;
-    font-weight: 600;
+    font-size: 12px;
+    margin-left: -.5rem;
 }
 
 .signin-container form{
@@ -536,20 +534,32 @@ form input:focus {
 
   .role-buttons {
     flex-direction: column;
+ 
   }
 
+.vendor-link{
+white-space: nowrap;
+font-size: 12px;
+}
+
+.client-link{
+white-space: nowrap;
+font-size: 12px;
+}
+
 .signup-text{
-  margin-left: -3.5rem;
+  margin-left: -3.9rem;
   font-size: 12px;
 }
 
-.signup-text a{
-    font-weight: 600;
-}
 
 .signup-text a:hover{
     text-decoration: underline;
     color: #03398c;
 }
 
+.login-btn{
+    font-size: 12px;
+    width: 35vw;
+}
 }

@@ -571,7 +571,7 @@ left: 15rem;
 
 @media (max-width:400px){
      .main-container{
-    max-width: 300px;
+    max-width: 500px;
     margin-left: 6rem;
 }
 
@@ -579,6 +579,7 @@ left: 15rem;
  padding: 5px;
    height: 80vh;
    width: 120vw;
+   margin-top: -1.5rem;
 }
 
 .Logo{
@@ -692,6 +693,9 @@ left: 18rem;
     margin-left: -2rem;
 }
 
+.subscribe-section{
+    margin-left: -6rem;
+}
 .subscribe-form{
    margin-right: -8rem;
 }

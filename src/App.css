@@ -13,7 +13,6 @@ body {
   padding: 20px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 
 }
 
@@ -317,6 +316,33 @@ h2 {
 }
 
 /* CTA */
+
+.cta-section2{
+    background-color: #092a5f;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 3;
+}
+
+.cta h3{
+    font-size: 1.6rem;
+}
+
+.cta-btn{
+    margin-right: 2rem;
+    width: 9rem;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: .8rem;
+    border-radius: 13px;
+       font-weight: 600;
+
+}
+
 .cta {
   background:  #092a5f;
   color: white;
@@ -327,7 +353,7 @@ h2 {
 }
 
 .cta-btnn2{
-    width: 9rem;
+    width: 8.2rem;
     background-color: #0f3168;
     color: #fff;
     cursor: pointer;
@@ -344,6 +370,14 @@ h2 {
   margin-top: 2rem;
 }
 
+.footer-bottom2{
+   margin-top: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    font-weight: 600;
+}
+
+
 .subscribe-section2{
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -356,6 +390,16 @@ h2 {
     margin-left: 3rem;
 }
 
+.subscribe-btn2{
+  background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    width: 7vw;
+    padding: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: -1px;
+}
 
 .subscribe-input2::placeholder{
     color: #666565;
@@ -400,6 +444,10 @@ h2 {
   max-width: 250px;
 }
 
+.cta-btn{
+  margin-left: .7rem;
+}
+
 .features h2{
   white-space: nowrap;
   font-size: 1.6rem;
@@ -441,13 +489,35 @@ h2 {
   max-width: 300px;
 }
 
-.subscribe-section{
+.subscribe-section2{
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
 }
 
 .subscribe-input2{
-    margin-left: 1rem;
+    margin-left: -23rem;
+    margin-top: 5rem;
+}
+
+
+.subscribe-btn2{
+    width: 28vw;
+    margin-top: 5rem;
+}
+
+.footer-bottom2 img{
+  margin-right: -9rem;
+  margin-left: -4rem;
+}
+
+.privacy-textt{
+  margin-left: -6rem;
+  margin-top: -2rem;
+}
+
+.footer-copy{
+  font-size: 13px;
+  margin-left: 2rem;
 }
 }

@@ -24,7 +24,8 @@ const AboutPage = () => {
       </div>
         <ul className="navbarr-links">
      
-          <li>About</li>
+     <li> <Link to="/" className="home-btn">Home</Link>
+</li>
           <li>FAQ</li>
           <li>Contact</li>
         </ul>

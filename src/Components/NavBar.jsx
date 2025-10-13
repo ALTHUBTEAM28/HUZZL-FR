@@ -21,9 +21,8 @@ export default function Navbar() {
 
       {/* Links */}
       <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
-        <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
-        <li><Link to="vendor/:id" onClick={() => setIsOpen(false)}>Services</Link></li>
-        <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+       <li><Link to="vendor/:id" onClick={() => setIsOpen(false)}>Services</Link></li>
+        <li><Link to="/profile-page" onClick={() => setIsOpen(false)}>Contact</Link></li>
         <li><Link to="/about" onClick={() => setIsOpen(false)}>About us</Link></li>
       </ul>
 
@@ -31,6 +30,11 @@ export default function Navbar() {
       <div className={`navbar-buttons ${isOpen ? "active" : ""}`}>
         <Link to="/login" className="btn login-btn" onClick={() => setIsOpen(false)}>Log In</Link>
         <Link to="/CreateAccount" className="btn signup-btn" onClick={() => setIsOpen(false)}>Sign Up</Link>
+      <div className="ham-sub">
+        <Link to="vendor/:id" onClick={() => setIsOpen(false)}>Services</Link>
+        <Link to="/profile-page" onClick={() => setIsOpen(false)}>Contact</Link>
+        <Link to="/about" onClick={() => setIsOpen(false)}>About us</Link>
+      </div>
       </div>
 
 

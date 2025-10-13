@@ -21,7 +21,7 @@ export default function Footer() {
     className="subscribe-input2"
     required/>
 
-    <button type="submit" className="subscribe-btn">
+    <button type="submit" className="subscribe-btn2">
       <span>Subscribe</span>
     </button>
   </form>
@@ -75,7 +75,7 @@ export default function Footer() {
 </div>
         </div>
 <hr/>
-        <div className="footer-bottom">
+        <div className="footer-bottom2">
           <div className="footer-logo">
         <img src="/Images/Logo.png" alt="logo"/>
       </div>

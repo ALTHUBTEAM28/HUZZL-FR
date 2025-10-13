@@ -5,19 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-
 .vendor-main {
-
   flex: 1;
-
   padding: 2rem 3rem;
-
   overflow-y: auto;
-
 }
-
-
 
 /* --------- Topbar --------- */
 
@@ -39,464 +31,248 @@ color: #03398c;
 
 }
 
-
-
 .vendor-profile {
-
   display: flex;
-
   align-items: center;
-
   gap: 10px;
-
 }
 
 
 
 .vendor-avatar {
-
   width: 55px;
-
   height: 55px;
-
   border-radius: 50%;
-
   object-fit: cover;
-
   cursor: pointer;
-
   border: 2px solid #ddd;
-
   transition: 0.3s ease;
-
 }
-
-
 
 .vendor-avatar:hover {
-
   transform: scale(1.05);
-
   border-color: #0095ff;
-
 }
-
 
 
 /* --------- Stats Section --------- */
-
 .stats-grid {
-
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 1.5rem;
-
   margin-bottom: 2.5rem;
-
 }
-
 
 
 .stat-card {
-
   background: #fff;
-
   border-radius: 10px;
-
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-
-  padding: 1.5rem;
-
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 2rem;
   transition: all 0.3s ease;
-
 }
-
-
 
 .stat-card:hover {
-
   transform: translateY(-3px);
-
 }
-
-
 
 .stat-card h4 {
-
   font-size: 1rem;
-
   color: #555;
-
   margin-bottom: 0.5rem;
-
 }
-
-
 
 .stat-card h2 {
-
   font-size: 2rem;
-
   color: #111;
-
   margin-bottom: 0.3rem;
-
 }
 
-
-
 .stat-card p {
-
   font-size: 0.9rem;
-
   color: #777;
-
 }
 
 
 
 /* --------- Upcoming Jobs --------- */
-
 .upcoming-jobs {
-
   background: #fff;
-
   padding: 1.5rem;
-
   border-radius: 10px;
-
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
-
 }
-
-
 
 .upcoming-jobs h3 {
-
   margin-bottom: 1rem;
-
   font-weight: 600;
-
   color: #333;
-
 }
-
-
 
 .job-card {
-
   display: flex;
-
   align-items: flex-start;
-
   justify-content: space-between;
-
   background: #f9f9f9;
-
   border-radius: 8px;
-
   padding: 1rem;
-
   margin-bottom: 1rem;
-
 }
-
 
 
 .job-info {
-
   display: flex;
-
   align-items: center;
-
   gap: 1rem;
-
 }
-
-
 
 .job-avatar {
-
   width: 50px;
-
   height: 50px;
-
   border-radius: 50%;
-
   object-fit: cover;
-
 }
-
-
 
 .job-client {
-
   font-weight: 600;
-
   color: #222;
-
 }
-
-
 
 .job-location {
-
   color: #777;
-
   font-size: 0.9rem;
-
 }
-
-
 
 .job-status {
-
   flex: 1;
-
   padding-left: 1rem;
-
 }
-
-
 
 .status {
-
   padding: 0.4rem 0.7rem;
-
   border-radius: 6px;
-
   font-size: 0.8rem;
-
   font-weight: 500;
-
 }
-
-
 
 .status.in-progress {
-
   background: #fff2cc;
-
   color: #b58900;
-
 }
-
-
 
 .status.completed {
-
   background: #d1f7d6;
-
   color: #008a32;
-
 }
-
-
 
 .status.pending {
-
   background: #ffe0e0;
-
   color: #c70000;
-
 }
-
-
 
 .status.active {
-
   background: #cce5ff;
-
   color: #0056b3;
-
 }
-
-
 
 .job-comment {
-
   margin-top: 0.3rem;
-
   font-size: 0.85rem;
-
   color: #666;
-
 }
-
-
 
 .job-meta {
-
   text-align: right;
-
 }
-
-
 
 .job-meta p {
-
   margin: 0.2rem 0;
-
   font-size: 0.9rem;
-
   color: #444;
-
 }
-
-
 
 .job-amount {
-
   font-weight: 600;
-
   color: #0095ff;
-
 }
-
-
 
 /* --------- My Jobs --------- */
 
 .my-jobs {
-
   background: #fff;
-
   padding: 1.5rem;
-
   border-radius: 10px;
-
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
-
 }
-
-
 
 .my-jobs h3 {
-
   margin-bottom: 1rem;
-
   color: #333;
-
   font-weight: 600;
-
 }
-
-
 
 .table {
-
   width: 100%;
-
   border-collapse: collapse;
-
 }
-
-
 
 .table-header,
-
 .table-row {
-
   display: grid;
-
   grid-template-columns: 1fr 1fr 1fr;
-
   padding: 0.8rem 0;
-
   border-bottom: 1px solid #eee;
-
 }
-
-
 
 .table-header {
-
   font-weight: 600;
-
   color: #333;
-
 }
-
-
 
 .table-row:hover {
-
   background: #f6faff;
-
 }
-
-
 
 /* --------- Reviews & Earnings --------- */
 
 .reviews-earnings {
-
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 1.5rem;
-
   margin-bottom: 3rem;
-
 }
 
-
-
 .reviews-section,
-
 .earnings-section {
-
   background: #fff;
-
   border-radius: 10px;
-
   padding: 1.5rem;
-
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 
 
 .reviews-section h3,
-
 .earnings-section h3 {
-
   margin-bottom: 1rem;
-
   font-weight: 600;
-
   color: #333;
 
 }
 
-
-
 .star-display {
-
   color: #ffb400;
-
   font-size: 1.2rem;
-
   margin-bottom: 1rem;
-
 }
 
 
 
 .earnings-placeholder {
-
   color: #777;
-
   font-size: 0.9rem;
-
 }
 
 
@@ -506,123 +282,83 @@ color: #03398c;
 @media (max-width: 1024px) {
 
   .stats-grid {
-
     grid-template-columns: 1fr 1fr;
-
   }
 
-
-
   .reviews-earnings {
-
     grid-template-columns: 1fr;
-
   }
 
 }
 
 
-
 @media (max-width: 768px) {
-
   .vendor-main {
-
     padding: 1.5rem;
-
+    margin-left: -20rem;
+    margin-top: 5rem;
   }
-
-
 
   .stats-grid {
-
     grid-template-columns: 1fr;
-
   }
-
-
 
   .vendor-topbar h2 {
-
     font-size: 1.5rem;
-
+    margin-left: -1rem;
   }
-
 
 
   .vendor-avatar {
-
-    width: 45px;
-
-    height: 45px;
-
+    width: 70px;
+    height: 70px;
+    margin-top: -1rem;
   }
 
-
-
   .job-card {
-
     flex-direction: column;
-
     align-items: flex-start;
-
-    gap: 0.8rem;
-
+    gap: 5px;
   }
 
 
 
   .job-meta {
-
     text-align: left;
-
   }
-
 }
 
 
 
 @media (max-width: 480px) {
-
   .vendor-main {
-
     padding: 1rem;
-
   }
 
-
-
   .stat-card {
-
     padding: 1rem;
-
   }
 
 
 
   .table-header,
-
   .table-row {
-
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr 1fr  1fr;
+    gap: 1rem;
   }
 
+  .table-row{
+    white-space: nowrap;
+  }
 
 
   .reviews-earnings {
-
     grid-template-columns: 1fr;
-
   }
 
-
-
   .vendor-topbar {
-
     flex-direction: column;
-
     align-items: flex-start;
-
     gap: 1rem;
 
   }

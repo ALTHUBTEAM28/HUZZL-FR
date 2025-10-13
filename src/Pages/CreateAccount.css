@@ -165,8 +165,8 @@ button{
 @media (max-width:500px){
     
 .card-1{
-    padding: 7px 10px;
-    max-width: 85%;
+    padding: 7px 12px;
+    max-width: 90%;
     margin-left:1rem;
     min-height: 95vh;
     margin-top: 2rem;
@@ -253,11 +253,11 @@ button{
     display: flex;
     flex-direction: column;
     padding: 1px;
-    width: 10rem;
+    width: 9rem;
 }
 
 .logo{
-    margin-left: 10rem;
+    margin-left: 9rem;
 }
 
 .character{

@@ -72,11 +72,9 @@
 }
 
 
-
 .btn.signup-btn:hover {
   background: #1d4ed8;
 }
-
 
 
 /* Hamburger */
@@ -88,6 +86,9 @@
 }
 
 
+.ham-sub{
+   display: none;
+}
 
 .hamburger .bar {
   width: 25px;
@@ -125,16 +126,17 @@
     top: 70px;
     left: 0;
     width: 100%;
+    max-height: 0;
     flex-direction: column;
     background-color: #fff;
     overflow: hidden;
-    max-height: 0;
     transition: max-height 0.3s ease;
     align-items: center;
     text-align: center;
     padding: 0;
     gap: 1rem;
     z-index: 999;
+    
   }
 
   .navbar-links.active,
@@ -148,14 +150,56 @@
     margin: 0.5rem 0;
   }
 
+  .ham-sub{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    transition: max-height 0.3s ease;
+    
+  }
 
+  .ham-sub a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .ham-sub a:hover{
+    background: #0a4aa7;
+    width: 100vw;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  
+.btn.login-btn {
+  border: none;
+  margin-bottom: -1rem;
+}
+
+.btn.login-btn:hover {
+  background: #0a4aa7;
+}
+
+.btn.signup-btn {
+  background: none;
+  color: #000;
+  border: none;
+  font-size: 15px;
+  margin-bottom: -1rem;
+}
+
+
+
+.btn.signup-btn:hover {
+  background: #0a4aa7;
+}
 
   .navbar-buttons {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-
 
 
   .hamburger {
