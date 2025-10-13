@@ -1,5 +1,5 @@
-# Step 1: Use Node.js 20 or later for the build process
-FROM node:20 as build
+# Step 1: Use Node.js 20 to build the app
+FROM node:20 AS build
 
 # Set working directory in the container
 WORKDIR /app
@@ -10,20 +10,21 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the app's source code
-COPY . .
+# Copy the rest of the source code (ensure destination is a directory)
+COPY . /app/
+
+# List the contents of /app/src/Components for debugging
+RUN ls -R /app/src/Components  
 
 # Build the app
 RUN npm run build
 
-# Step 2: Use a lightweight nginx server  to serve the built app
+# Step 2: Use Nginx to serve the built app
 FROM nginx:alpine
 
 # Copy the build output from the build stage to the nginx server's html directory
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Expose port 80 to allow traffic
 EXPOSE 80
 
-# Start the nginx server
 CMD ["nginx", "-g", "daemon off;"]

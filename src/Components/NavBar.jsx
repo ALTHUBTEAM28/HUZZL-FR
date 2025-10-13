@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./NavBar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
