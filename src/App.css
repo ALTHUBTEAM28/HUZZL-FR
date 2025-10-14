@@ -421,6 +421,9 @@ h2 {
     text-decoration: underline;
     color: #03398c;
 }
+.footer-copy2{
+  margin-left: 65rem;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -516,7 +519,7 @@ h2 {
   margin-top: -2rem;
 }
 
-.footer-copy{
+.footer-copy2{
   font-size: 13px;
   margin-left: 2rem;
 }

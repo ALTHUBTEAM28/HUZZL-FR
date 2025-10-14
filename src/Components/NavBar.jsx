@@ -29,7 +29,7 @@ export default function Navbar() {
       {/* Buttons */}
       <div className={`navbar-buttons ${isOpen ? "active" : ""}`}>
         <Link to="/login" className="btn login-btn" onClick={() => setIsOpen(false)}>Log In</Link>
-        <Link to="/CreateAccount" className="btn signup-btn" onClick={() => setIsOpen(false)}>Sign Up</Link>
+        <Link to="/signup" className="btn signup-btn" onClick={() => setIsOpen(false)}>Sign Up</Link>
       <div className="ham-sub">
         <Link to="vendor/:id" onClick={() => setIsOpen(false)}>Services</Link>
         <Link to="/profile-page" onClick={() => setIsOpen(false)}>Contact</Link>

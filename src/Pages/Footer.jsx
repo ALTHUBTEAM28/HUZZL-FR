@@ -80,7 +80,7 @@ export default function Footer() {
         <img src="/Images/Logo.png" alt="logo"/>
       </div>
 
-         <p className="footer-copy">&copy;{new Date().getFullYear()}  Huzzl. All rights reserved.</p>
+         <p className="footer-copy2">&copy;{new Date().getFullYear()}  Huzzl. All rights reserved.</p>
         </div>
       </footer>
     </div>
