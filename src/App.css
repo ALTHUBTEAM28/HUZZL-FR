@@ -7,7 +7,7 @@
 
 body {
   font-family: Manrope, sans-serif;
-  color: #333;
+  color: #000;
   line-height: 1.6;
   margin: 40px auto;
   padding: 20px;
@@ -327,8 +327,14 @@ h2 {
     line-height: 3;
 }
 
-.cta h3{
-    font-size: 1.6rem;
+
+.cta-section2 p{
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.cta-section2 h3{
+    font-size: 1.8rem;
 }
 
 .cta-btn{
@@ -387,7 +393,7 @@ h2 {
 }
 
 .subscribe-input2{
-    margin-left: 3rem;
+    margin-left: 10rem;
 }
 
 .subscribe-btn2{
@@ -505,7 +511,7 @@ h2 {
 
 
 .subscribe-btn2{
-    width: 28vw;
+    width: 29vw;
     margin-top: 5rem;
 }
 
@@ -521,6 +527,6 @@ h2 {
 
 .footer-copy2{
   font-size: 13px;
-  margin-left: 2rem;
+  margin-left: -2rem;
 }
 }

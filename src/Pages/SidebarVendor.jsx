@@ -16,6 +16,7 @@ const SidebarVendor = () => {
         <NavLink to="/vendor-jobs" activeclassname="active">
           <img src="/Images/file.svg" alt="job" />My Jobs
         </NavLink>
+         <NavLink to="/client-messages" className={({isActive}) => isActive ? "active" : ""}> <img src="/Images/message.svg" alt="message" />Messages</NavLink>
         <NavLink to="/vendor-reviews" activeclassname="active">
            <img src="/Images/review.svg" alt="review" /> Reviews
         </NavLink>

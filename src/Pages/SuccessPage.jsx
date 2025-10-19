@@ -18,7 +18,7 @@ const SuccessPage = () => {
           is as smooth and authentic as it should be. Here's what we've done:
           Squashed pesky bugs, so nothing gets in the way of your real moments.
         </p>
-       <Link to="/" className="explore-btn">Explore</Link>
+       <Link to="/login" className="explore-btn">Explore</Link>
       </div>
     </div>
   );

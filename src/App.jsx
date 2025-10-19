@@ -20,8 +20,12 @@ import AboutPage from "./Pages/AboutPage";
 import Login from "./Components/Login";
 import ProfilePage from "./Pages/ProfilePage";
 import VendorProfile, { exampleVendorData } from "./Pages/VendorProfile";
+import VendorSettings from "./Pages/VendorSettings";
 import ClientDashboard from "./Pages/ClientDashboard";
 import VendorDashboard from "./Pages/VendorDashboard"; 
+import ClientSettings from "./Pages/ClientSettings";
+import Terms from "./Pages/Terms";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import "./App.css";
 
 const SignupFlow = () => {
@@ -79,8 +83,10 @@ function App() {
         <Route path="/vendor/:id" element={<VendorProfile vendorData={exampleVendorData} />} />
         <Route path="/vendor-dashboard" element={<VendorDashboard />} />
         <Route path="/client-dashboard" element={<ClientDashboard/>} />
-
-
+         <Route path="/vendor-settings" element={<VendorSettings/>} />
+       <Route path="/client-settings" element={<ClientSettings/>} />
+            <Route path="/privacy" element={<PrivacyPolicy/>} />
+            <Route path="/terms" element={<Terms/>} />
       </Routes>
     </Router>
   );

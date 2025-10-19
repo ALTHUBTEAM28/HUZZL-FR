@@ -1,0 +1,73 @@
+.legal-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  color: #000;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2rem;
+  color: #092a5f;
+  text-align: center;
+}
+
+.last-updated {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+
+h2 {
+  font-size: 1.2rem;
+  color: #092a5f;
+  margin-bottom: 8px;
+}
+
+span{
+  color: #092a5f;
+  font-weight: 600;
+}
+
+p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+
+.back-btn {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 20px;
+  border: none;
+  background: darkblue;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.back-btn:hover {
+  background:#092a5f;
+}
+
+
+@media (max-width: 600px) {
+  .legal-container {
+    padding: 20px;
+    margin: 20px;
+  }
+}

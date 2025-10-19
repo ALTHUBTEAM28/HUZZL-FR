@@ -150,7 +150,7 @@ const CreateAccount = ({ onContinue }) => {
 
         <div className="privacy">
           <p>By signing i confirm that i have carefully read and agree to the HUZZL</p>
-          <p><a href="#">Privacy Policy and Terms of Services.</a></p>
+          <p><Link to="/privacy">Privacy Policy</Link> and  <Link to="/terms">Terms of Services.</Link></p>
         </div>
       </div>
     </div>

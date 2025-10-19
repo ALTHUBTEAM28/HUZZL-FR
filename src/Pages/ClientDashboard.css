@@ -175,7 +175,7 @@
 .messages-right {
   flex: 1;
   margin-top: 2rem;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  darkblue;
 }
 
 .message-box {
