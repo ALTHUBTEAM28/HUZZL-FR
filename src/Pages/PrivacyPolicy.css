@@ -77,7 +77,25 @@ ul {
 @media (max-width: 600px) {
   .legal-container {
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
   }
+
+  li{
+    margin-left: 4.5rem;
+}
+
+ul {
+  margin-left: -85px;
+
+}
+
+p, li{
+  font-size: 1.1rem;
+}
+
+h2{
+  margin-left: -2.5rem;
+  line-height: 1.3;
+}
 }
 
