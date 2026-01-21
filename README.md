@@ -17,7 +17,7 @@ HUZZL is a trusted platform that connects individuals and businesses with qualif
 ## 🛠️ Tech Stack
 - **Frontend:** ReactJS (or your choice of framework)  
 
-- **Deployment:** Vercel  
+- **Deployment:** Render  
 
 ---
 
