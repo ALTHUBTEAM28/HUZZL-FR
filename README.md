@@ -5,7 +5,7 @@ HUZZL is a trusted platform that connects individuals and businesses with qualif
 
 ---
 
-## 🚀 Features
+##  Features
 - 🔍 **Discover Professionals** – Easily search and connect with verified service providers across multiple industries.  
 - ⚡ **Fast & Reliable Hiring** – Streamlined process to quickly find the right person for the job.  
 - ✅ **Verified & Trusted** – All professionals are vetted to ensure quality and reliability.  
@@ -14,14 +14,14 @@ HUZZL is a trusted platform that connects individuals and businesses with qualif
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Frontend:** ReactJS (or your choice of framework)  
 
 - **Deployment:** Render  
 
 ---
 
-## 📦 Installation
+##  Installation
 
 1. Clone the repository:
    ```bash
