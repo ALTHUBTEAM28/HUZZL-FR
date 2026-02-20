@@ -6,11 +6,11 @@ HUZZL is a trusted platform that connects individuals and businesses with qualif
 ---
 
 ##  Features
-- 🔍 **Discover Professionals** – Easily search and connect with verified service providers across multiple industries.  
-- ⚡ **Fast & Reliable Hiring** – Streamlined process to quickly find the right person for the job.  
-- ✅ **Verified & Trusted** – All professionals are vetted to ensure quality and reliability.  
-- 📱 **User-Friendly Experience** – Accessible on both desktop and mobile for convenience.  
-- 🤝 **One-Stop Solution** – All your hiring needs in one platform.  
+-  **Discover Professionals** – Easily search and connect with verified service providers across multiple industries.  
+-  **Fast & Reliable Hiring** – Streamlined process to quickly find the right person for the job.  
+-  **Verified & Trusted** – All professionals are vetted to ensure quality and reliability.  
+-  **User-Friendly Experience** – Accessible on both desktop and mobile for convenience.  
+-  **One-Stop Solution** – All your hiring needs in one platform.  
 
 ---
 
