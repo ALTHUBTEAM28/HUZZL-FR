@@ -37,7 +37,7 @@ Set up environment variables:
 
 Create a .env file in the root directory
 
-Add keys for database, authentication, and API services
+Add keys for database, authentication, and API services.
 
 Run the development server:
 
